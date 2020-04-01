@@ -1,4 +1,9 @@
-# gatsby-starter-typescript
+# Building a new portfolio 
+
+## using a boilerplate with Gatsby and TypeScript so I have a chance to get my hands dirty with TS
+
+## leaving boiler notes for now for refernce
+## gatsby-starter-typescript
 
 [![Build Status](https://travis-ci.org/goblindegook/gatsby-starter-typescript.svg?branch=master)](https://travis-ci.org/goblindegook/gatsby-starter-typescript)
 
