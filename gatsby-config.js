@@ -89,6 +89,11 @@ module.exports = {
                 title: 'Another Page',
                 content: 'Welcome to page 2',
                 path: '/another-page/'
+              },
+              {
+                title: 'Little Bits',
+                content: 'little bits of code here and there',
+                path: '/littleBits/'
               }
             ]
           }
