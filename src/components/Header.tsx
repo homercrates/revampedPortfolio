@@ -18,7 +18,10 @@ const style = {
   `,
   title: css`
     margin: 0;
-    display: inline-block;
+    /*display: inline-block;*/
+  `,
+  ul: css`
+    list-style-type: none;
   `,
 }
 
@@ -27,7 +30,7 @@ const TitleLink = styled(Link)`
 
   &:active,
   &:hover {
-    color: #fff;
+    color: #e2e2e2;
   }
 `
 
@@ -38,9 +41,16 @@ interface HeaderProps {
 export const Header = ({ title }: HeaderProps) => (
   <div css={style.container}>
     <div css={style.wrapper}>
-      <h1 css={style.title}>
-        <TitleLink to="/">{title}</TitleLink>
-      </h1>
+      <ul css={style.ul}>
+        <li>
+          <h1 css={style.title}>
+            <TitleLink to="/">{title}</TitleLink>
+          </h1>
+        </li>
+        <li><TitleLink to="/about">About</TitleLink></li>
+        <li><TitleLink to="/littleBits">Little bits</TitleLink></li>
+        <li><TitleLink to="/contact">Contact</TitleLink></li>
+      </ul>
     </div>
   </div>
 )
