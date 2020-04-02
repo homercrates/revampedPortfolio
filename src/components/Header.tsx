@@ -9,19 +9,25 @@ const style = {
     margin-bottom: 1.45rem;
   `,
   wrapper: css`
-    display: grid;
-    grid-template-columns: auto 10rem;
-    grid-template-rows: auto;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 960px;
-    padding: 1.45rem 1.0875rem;
+    padding: 1.5rem 1.0875rem;
   `,
   title: css`
     margin: 0;
-    /*display: inline-block;*/
+    display: inline-block;
   `,
-  ul: css`
+  myUl: css`
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     list-style-type: none;
+  `,
+  myLi: css`
+    display: flex;
+    justify-content: space-between;
   `,
 }
 
@@ -41,7 +47,7 @@ interface HeaderProps {
 export const Header = ({ title }: HeaderProps) => (
   <div css={style.container}>
     <div css={style.wrapper}>
-      <ul css={style.ul}>
+      <ul css={style.myUl}>
         <li>
           <h1 css={style.title}>
             <TitleLink to="/">{title}</TitleLink>
