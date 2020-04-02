@@ -15,6 +15,9 @@ export const IndexPage = () => (
     <p>
       <Link to="/all/">See content generated from Markdown files</Link>
     </p>
+    <p>
+      <Link to="/littleBits/">Little bits of code.</Link>
+    </p>
   </>
 )
 
