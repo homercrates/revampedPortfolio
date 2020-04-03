@@ -1,6 +1,8 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
 
+import Dice from '../components/Dice';
+
 
 export const LittleBits = () => (
     <div>
@@ -12,7 +14,8 @@ export const LittleBits = () => (
 
 const LayoutLittleBits = () => (
     <Layout>
-        <LittleBits />
+      <LittleBits />
+      <Dice />
     </Layout>
 )
 export default LayoutLittleBits;
