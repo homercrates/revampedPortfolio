@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
 
-import Dice from '../components/Dice';
+import { Dice } from '../components/Dice';
 
 
 export const LittleBits = () => (

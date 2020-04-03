@@ -14,7 +14,7 @@ const Count = styled('span')`
   padding: 1rem 2rem;
 `
 
-const Dice = () => {
+export const Dice = () => {
   const [dice, setDice] = useState(0)
   return (
     <Wrapper>
@@ -23,4 +23,3 @@ const Dice = () => {
     </Wrapper>
   )
 }
-export default Dice;
