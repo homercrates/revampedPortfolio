@@ -147,6 +147,7 @@ module.exports = {
                         path
                         title
                         date
+                        category
                       }
                       excerpt
                       html
