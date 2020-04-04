@@ -102,14 +102,14 @@ module.exports = {
           { name: 'title', store: true, attributes: { boost: 20 } },
           { name: 'path', store: true },
           { name: 'content' },
-          { name: 'tags' }
+          { name: 'tags' },
         ],
         resolvers: {
           Mdx: {
             title: node => node.frontmatter.title,
             path: node => node.frontmatter.path,
             content: node => node.rawBody,
-            tags: node => node.frontmatter.tags
+            tags: node => node.frontmatter.tags,
           }
         }
       }
@@ -147,7 +147,6 @@ module.exports = {
                         path
                         title
                         date
-                        category
                       }
                       excerpt
                       html
