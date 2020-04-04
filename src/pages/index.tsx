@@ -1,10 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Layout } from '../components/Layout'
+import { css } from '@emotion/core'
+
+const style = {
+  accentColor: css`
+    color: #6f42c1;
+  `,
+  boldLook: css`
+    font-weight: 800;
+  `,
+}
 
 export const IndexPage = () => (
   <>
-    <h2>Developer</h2>
+    <h1 css={style.boldLook}><span css={style.accentColor}>Dev</span>eloper</h1>
     <p>here is some stuff.</p>
     <p>here is a little more</p>
     <ul><li>here</li><li>some</li><li>stuff</li></ul>
