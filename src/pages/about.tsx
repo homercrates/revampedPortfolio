@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
 import { css } from '@emotion/core'
+import { graphql } from 'gatsby'
 
 const style = {
   accentColor: css`
@@ -32,3 +33,17 @@ const LayoutAbout = () => (
     </Layout>
 )
 export default LayoutAbout;
+
+export const query = graphql`
+  query {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            tags
+          }
+        }
+      }
+    }
+  }
+`
