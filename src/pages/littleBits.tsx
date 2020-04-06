@@ -26,7 +26,7 @@ export const LittleBits = () => (
 const LayoutLittleBits = () => (
     <Layout>
       <LittleBits />
-      <Dice />
+      <Dice text="Roll the dice. Get result."/>
     </Layout>
 )
 export default LayoutLittleBits;

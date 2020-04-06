@@ -14,10 +14,11 @@ const Count = styled('span')`
   padding: 1rem 2rem;
 `
 
-export const Dice = () => {
+export const Dice = (props) => {
   const [dice, setDice] = useState(0)
   return (
     <Wrapper>
+      <p>{props.text}</p>
       <Button onClick={() => setDice(Math.floor(Math.random() * 6) + 1)}>Roll</Button>
       <Count>{dice}</Count>
     </Wrapper>
