@@ -5,6 +5,8 @@ import { SiteMetadataQuery } from 'generated/types/gatsby'
 import { css } from '@emotion/core'
 import { Header } from './Header'
 
+import Drip from '../components/Drip';
+
 const wrapper = css`
   margin: 0 auto;
   max-width: 960px;
@@ -44,6 +46,7 @@ export const Layout = ({ children }: LayoutProps) => {
         ]}
       />
       <Header title={data.site.siteMetadata.title} />
+      <Drip />
       <div css={wrapper}>{children}</div>
     </main>
   )

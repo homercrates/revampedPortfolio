@@ -4,6 +4,7 @@ import { Layout } from '../components/Layout'
 import { css } from '@emotion/core'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
+
 const style = {
   grey: css`
     color: #3e3e3e;
