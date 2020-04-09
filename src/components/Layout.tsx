@@ -11,6 +11,13 @@ const wrapper = css`
   margin: 0 auto;
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
+  z-index: -1;
+`
+const drop = css`
+  z-index: 0;
+`
+const onTop = css`
+  z-index: 1;
 `
 
 interface LayoutProps {
