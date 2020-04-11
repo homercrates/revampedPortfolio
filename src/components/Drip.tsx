@@ -17,9 +17,19 @@ const Container = styled('span')`
 const Drop = styled('div')`
   width: 1.5vh;
   height: 1.5vh;
-  border-radius: 50%;
+  transform: rotate(-45deg);
+  border-radius: 50% 0 50% 70%;
   background-color: red;
   position: absolute;
+`
+
+const DropReflection = styled('div')`
+width: 1vh;
+height: 1vh;
+transform: rotate(-45deg);
+border-radius: 50% 50% 50% 70%;
+background-color: white;
+position: absolute;
 `
 
 const AnimDrip = keyframes`
@@ -27,19 +37,19 @@ const AnimDrip = keyframes`
     transform: translate3d(-.9vh,-5vh,0);
   }
 
-  40%, 43% {
+  40% {
     transform: translate3d(-.7vh, 0, 0);
   }
 
-  70% {
+  60% {
     transform: translate3d(-.6vh, 35vh, 0);
   }
 
-  90% {
+  80% {
     transform: translate3d(-.5vh, 70vh, 0);
   } 
 
-  97% {
+  93% {
     transform: translate3d(-.6vh, 80vh, 0); 
   }
  
@@ -77,11 +87,13 @@ const Drip = (props) => {
   return (
     <Body>
       <Container>
-      <div
-        css={css`animation: ${AnimDrip} 20s ease infinite;`}
-      >
+        <div
+            css={css`animation: ${AnimDrip} 60s ease infinite;`}
+        >
           <Drop />
-      </div></Container>
+          <DropReflection />
+        </div>
+      </Container>
     </Body>
   )
 }
