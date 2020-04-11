@@ -24,12 +24,13 @@ const Drop = styled('div')`
 `
 
 const DropReflection = styled('div')`
-width: 1vh;
-height: 1vh;
-transform: rotate(-45deg);
-border-radius: 50% 50% 50% 70%;
-background-color: white;
-position: absolute;
+  width: .3vh;
+  height: .5vh;
+  border-radius: 50 30% 30% 50%%;
+  background-color: white;
+  position: absolute;
+  top: .55vh;
+  left: .95vh;
 `
 
 const AnimDrip = keyframes`
@@ -57,30 +58,6 @@ const AnimDrip = keyframes`
     transform: translate3d(0, 100vh, 0)
   }
 
-`
-/*
-  0% {top: -20%;}
-  20% {top: 0%;}
-  80% {top: 85%;}
-  100% {top: +100%;}
-*/
-
-const Bounce = keyframes`
-  from, 20%, 53%, 80%, to {
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    transform: translate3d(0,-4px,0);
-  }
 `
 
 const Drip = (props) => {
