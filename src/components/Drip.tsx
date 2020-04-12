@@ -19,18 +19,20 @@ const Drop = styled('div')`
   height: 1.5vh;
   transform: rotate(-45deg);
   border-radius: 50% 0 50% 70%;
+  border: black;
   background-color: red;
   position: absolute;
 `
 
 const DropReflection = styled('div')`
-  width: .3vh;
-  height: .5vh;
-  border-radius: 50 30% 30% 50%%;
+  width: .7vh;
+  height: .4vh;
+  border-radius: 30% 50% 50% 30%;
   background-color: white;
+  opacity: .6;
   position: absolute;
-  top: .55vh;
-  left: .95vh;
+  top: .60vh;
+  left: .80vh;
 `
 
 const AnimDrip = keyframes`
