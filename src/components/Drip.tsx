@@ -20,7 +20,7 @@ const Drop = styled('div')`
   transform: rotate(-45deg);
   border-radius: 50% 0 50% 70%;
   border: black;
-  background-color: red;
+  background-color: #3e3e3e;
   position: absolute;
 `
 
